@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>stenco construction</title>
+  <!-- bootstrap@5.0.2 cdn link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- custom style css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- fontawesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    /* ----------- ========== start - project section ========== ----------- */
+    .project-section {
+      background-image: url(images/home-concept-small.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 60%;
+    }
+
+    .diamonds {
+      position: relative;
+      padding: 50px 0;
+    }
+
+    .project-card {
+      display: inline-block;
+      width: 255px;
+      height: 255px;
+      transform: rotate(-45deg);
+      background-color: rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      margin-right: 135px;
+      position: relative;
+      transition: all .3s ease-in-out;
+    }
+
+    .card-three {
+      margin-right: 0;
+    }
+
+    .card-four {
+      position: absolute;
+      top: 10px;
+      right: 110px;
+      width: 128px;
+      height: 128px;
+    }
+
+    .project-content {
+      width: 255px;
+      height: 255px;
+      transform: rotate(45deg);
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .project-card::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      background: rgb(0, 0, 0);
+      opacity: 0;
+      transform: scale(0);
+      transition: all .2s ease;
+    }
+
+    .project-card:hover::after {
+      opacity: .3;
+      transform: scale(1);
+      cursor: pointer;
+    }
+
+    .card-five {
+      margin-left: 530px;
+      margin-top: -64px;
+    }
+
+    .card-six {
+      width: 128px;
+      height: 128px;
+      position: absolute;
+      right: -50px;
+      margin: 14px 0 0 0px;
+    }
+
+    .card-seven {
+      width: 128px;
+      height: 128px;
+      position: absolute;
+      right: -80px;
+      bottom: 0px;
+    }
+
+    .project-content img {
+      max-width: 375px;
+      margin-left: -40%;
+
+    }
+
+    .project-card::before {
+      content: '\f00e';
+      font-weight: 900;
+      font-family: "Font Awesome 6 Free";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -10px 0px 0 -20px;
+      transform: scale(2) rotate(45deg);
+      z-index: 1;
+      font-size: 28px;
+      color: #fff;
+      transition: all .4s ease;
+      opacity: 0;
+    }
+
+    .project-card:hover::before {
+      opacity: 1;
+      transform: scale(1) rotate(45deg);
+    }
+
+    /* ----------- ========== end - project section ========== ----------- */
+
+    @media screen and (max-width: 1200px) {
+
+      .card-one,
+      .card-three,
+      .card-five {
+        margin: 0 0 0 50px;
+      }
+
+      .card-two,
+      .card-four,
+      .card-six {
+        margin: 0 30px -197px 70px;
+      }
+
+      .card-four,
+      .card-six,
+      .card-seven {
+        width: 255px;
+        height: 255px;
+        position: relative;
+        top: 0;
+        right: 0;
+      }
+
+      .card-three,
+      .card-four,
+      .card-five,
+      .card-six,
+      .card-seven {
+        margin-top: 130px;
+      }
+
+      .card-seven {
+        margin-right: 190px;
+        margin-left: -120px;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      .card-one {
+        margin-top: 0;
+      }
+
+      .card-two,
+      .card-four,
+      .card-six {
+        margin: 0 40px -197px 15px;
+      }
+
+      .card-seven {
+        margin-left: -75px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .project-card {
+        margin: 130px 100px 0 100px;
+      }
+
+      .card-one {
+        margin-top: 0;
+      }
+
+      .card-seven {
+        margin-right: 100px;
+        margin-left: 100px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .project-card {
+        /* margin-top: 115px; */
+        margin: 115px 0 0 0;
+        right: 0;
+        left: 0;
+      }
+
+
+      .card-one {
+        margin-top: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="project-section">
+    <div class="container-fluid">
+      <div class="pt-5 px-lg-5 mx-lg-0 mx-sm-4 bg-danger">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="main-heading text-color-dark py-3">
+              Our Projects
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pt-xl-5 pt-4 pb-5">
+      <div class="text-center diamonds mx-lg-0 mx-sm-4 bg-danger">
+        <div class="project-card card-one">
+          <div class="project-content">
+            <!-- <i class="fa-solid fa-magnifying-glass-plus"></i> -->
+            <img src="images/63.png" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="project-card card-two">
+          <div class="project-content">
+            <!-- <i class="fa-solid fa-magnifying-glass-plus"></i> -->
+            <img src="images/236.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="project-card card-three">
+          <div class="project-content">
+            <!-- <i class="fa-solid fa-magnifying-glass-plus"></i> -->
+            <img src="images/construction-gallery-3.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="project-card card-four">
+          <div class="project-content">
+            <!-- <i class="fa-solid fa-magnifying-glass-plus"></i> -->
+            <img src="images/construction-gallery-15.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="project-card card-five">
+          <div class="project-content">
+            <!-- <i class="fa-solid fa-magnifying-glass-plus"></i> -->
+            <img src="images/construction-gallery-14.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="project-card card-six">
+          <div class="project-content">
+            <!-- <i class="fa-solid fa-magnifying-glass-plus"></i> -->
+            <img src="images/construction-gallery-6.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="project-card card-seven">
+          <div class="project-content">
+            <!-- <i class="fa-solid fa-magnifying-glass-plus"></i> -->
+            <img src="images/construction-gallery-7.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br><br><br><br>
+
+  <!-- seperate javascript cdn link -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
