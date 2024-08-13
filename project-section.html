@@ -16,11 +16,369 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <style>
+        .text-color {
+            color: #04438d;
+        }
+
+        .project-card::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            background: rgb(0, 0, 0);
+            opacity: 0;
+            transform: scale(0);
+            transition: all .2s ease;
+        }
+
+        .project-card:hover::after {
+            opacity: .3;
+            transform: scale(1);
+            cursor: pointer;
+        }
+
+        .project-card::before {
+            content: '\f00e';
+            font-weight: 900;
+            font-family: "Font Awesome 6 Free";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -10px 0px 0 -20px;
+            transform: scale(2) rotate(45deg);
+            z-index: 1;
+            font-size: 28px;
+            color: #fff;
+            transition: all .4s ease;
+            opacity: 0;
+        }
+
+        .project-card:hover::before {
+            opacity: 1;
+            transform: scale(1) rotate(45deg);
+        }
+
+        .project-card {
+            width: 200px;
+            height: 200px;
+            transform: rotate(-45deg);
+            overflow: hidden;
+            transition: all .3s ease-in-out;
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .project-content {
+            width: 200px;
+            height: 200px;
+            display: table-cell;
+            background-color: pink;
+            transform: rotate(45deg);
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .project-content img {
+            max-width: 320px;
+            margin-left: -40%;
+
+        }
+
+        @media (max-width: 1399px) {
+            .project-card {
+                width: 195px;
+                height: 195px;
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .project-card {
+                width: 230px;
+                height: 230px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .project-card {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .project-card {
+                width: 220px;
+                height: 220px;
+                margin-top: 60px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
     <h1>this file is for practice</h1>
+
+    <br>
+    <!-- ------------------ ============= start - project section ============= ------------------  -->
+    <section class="project-section py-5">
+        <div class="container">
+            <div class="row pt-4 pb-5">
+                <div class="col">
+                    <h2 class="mb-0 text-color-dark main-heading text-center">Our Projects</h2>
+                </div>
+            </div>
+            <div class="row px-xxl-5 px-xl-0 px-lg-5 mx-xl-0 mx-sm-5 pt-md-5 gy-md-0 gy-5 justify-content-center">
+                <div class="col-xl-3 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                    <div class="project-card position-relative">
+                        <div class="project-content">
+                            <img src="images//construction-gallery-14.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                    <div class="project-card position-relative">
+                        <div class="project-content">
+                            <img src="images//construction-gallery-3.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                    <div class="project-card position-relative">
+                        <div class="project-content">
+                            <img src="images//construction-gallery-7.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-md-0 mt-1  px-xxl-5 px-xl-0 px-lg-5 mx-xl-0 mx-sm-5 gy-md-0 gy-5 justify-content-center">
+                <div class="col-xl-3 col-md-6 col-12 d-none d-xl-flex justify-content-center align-items-center">
+                    <div class="project-card position-relative">
+                        <div class="project-content">
+                            <img src="images//construction-gallery-15.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                    <div class="project-card position-relative">
+                        <div class="project-content">
+                            <img src="images//construction-gallery-7.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                    <div class="project-card position-relative">
+                        <div class="project-content">
+                            <img src="images//construction-gallery-6.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                    <div class="project-card position-relative">
+                        <div class="project-content">
+                            <img src="images//construction-gallery-14.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="row mt-md-0 mt-1  px-xxl-5 px-xl-0 px-lg-5 mx-xl-0 mx-sm-5 pb-5 gy-md-0 gy-5 justify-content-center">
+                <div class="col-xl-3 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                    <div class="project-card position-relative">
+                        <div class="project-content">
+                            <img src="images/63.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                    <div class="project-card position-relative">
+                        <div class="project-content">
+                            <img src="images/236.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                    <div class="project-card position-relative">
+                        <div class="project-content">
+                            <img src="images//construction-gallery-3.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 justify-content-center text-center">
+                <div class="col-md-8 col-lg-6">
+                    <p class="main-para">We are committed to offering our customers only the best in first-class
+                        renovation and quality
+                        service in Manhattan, Queens and NYC and we look forward to working with you.
+                        <strong class="fs-18">Call us today to schedule a
+                            <a href="#" class="text-color text-decoration-none">FREE CONSULTATION:
+                                (718)-807-6414
+                            </a>
+                        </strong>
+                    </p>
+                    <a class="btn main-btn py-2 px-3 rounded-0" href="projects.html">View
+                        All Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------ ============= end - project section ============= ------------------  -->
+
+    <br><br><br>
+    <!-- ------------------ ============= start - footer section ============= ------------------  -->
+    <footer class="footer-section overflow-hidden position-relative border-top-0">
+        <div class="container pt-4">
+            <div class="pt-4">
+                <div class="row text-lg-start text-center justify-content-lg-start justify-content-center">
+                    <div
+                        class="col-12 col-md-6 col-lg-3 mt-4 d-flex flex-column align-items-center align-items-lg-start">
+                        <div class="footer-logo">
+                            <a href="#" class="w-100">
+                                <img src="images/logo-construction-small.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="footer-social mt-4">
+                            <i
+                                class="fa-brands fa-facebook-f d-inline-flex justify-content-center align-items-center me-2"></i>
+                            <i class="fa-brands fa-twitter d-inline-flex justify-content-center align-items-center me-2 mt-1"
+                                title="Twitter"></i>
+                            <i class="fa-brands fa-linkedin d-inline-flex justify-content-center align-items-center me-2 mt-1"
+                                title="LinkedIn"></i>
+                            <i class="fa-brands fa-youtube d-inline-flex justify-content-center align-items-center me-2 mt-1"
+                                title="Youtube"></i>
+                            <i class="fa-brands fa-instagram d-inline-flex justify-content-center align-items-center mt-1"
+                                title="Instagram"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2 mt-4">
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <h1 class="footer-head text-color-dark">Navigation</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="footer-link ps-0 list-unstyled">
+                                    <li class="position-relative"><a href="#" class="text-decoration-none">Home</a></li>
+                                    <li class="position-relative"><a href="#" class="text-decoration-none">About
+                                            Stenco</a></li>
+                                    <li class="position-relative"><a href="#" class="text-decoration-none">Projects</a>
+                                    </li>
+                                    <li class="position-relative"><a href="#" class="text-decoration-none">Contact
+                                            Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-xxl-4 mt-4">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-12 col-xxl-6">
+                                <ul class="footer-link list-unstyled">
+                                    <li class="position-relative"><a href="#" class="text-decoration-none">Kitchen
+                                            Remodeling</a></li>
+                                    <li class="position-relative"><a href="#" class="text-decoration-none">Bathroom
+                                            Remodeling</a></li>
+                                    <li class="position-relative"><a href="#" class="text-decoration-none">Floor
+                                            Repairing & Renovation</a></li>
+                                    <li class="position-relative"><a href="#" class="text-decoration-none">Basement
+                                            Remodeling</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-12 col-xxl-6">
+                                <ul class="footer-link list-unstyled">
+                                    <li class="position-relative"><a href="#" class="text-decoration-none">Roof
+                                            Repairing & Renovation</a></li>
+                                    <li class="position-relative"><a href="#" class="text-decoration-none">Sidewalk &
+                                            Concrete Work</a></li>
+                                    <li class="position-relative"><a href="#" class="text-decoration-none">Brick
+                                            Fencing Work</a></li>
+                                    <li class="position-relative"><a href="#" class="text-decoration-none">Home
+                                            Extensions & New Construction</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xxl-3 mt-4">
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <h1 class="footer-head text-color-dark">Stenco Construction</h1>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center text-center">
+                            <div class="col-12 col-md-6 col-lg-12 text-center">
+                                <ul class="footer-icon list-unstyled">
+                                    <li>
+                                        <div class="row text-start">
+                                            <div class="col-auto">
+                                                <i class="fa-solid fa-thumbtack me-1"></i>
+                                                <strong>Office</strong>
+                                            </div>
+                                            <div class="col px-0">
+                                                <a href="#" class="text-decoration-none">38-08 Bell Blvd bayside New
+                                                    York 11361</a>
+
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="row text-start">
+                                            <div class="col-auto">
+                                                <i class="fa-solid fa-phone-flip me-1"></i>
+                                                <strong>Phone</strong>
+                                            </div>
+                                            <div class="col px-0">
+                                                <a href="#" class="text-decoration-none">(718) 807 - 6414</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row text-start">
+                                            <div class="col-auto">
+                                                <i class="fa-regular fa-envelope me-1"></i>
+                                                <strong>Email</strong>
+                                            </div>
+                                            <div class="col px-0">
+                                                <a href="#"
+                                                    class="text-decoration-none">stenco.construction@gmail.com</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row text-start">
+                                            <div class="col-auto">
+                                                <i class="fa-solid fa-globe me-1"></i>
+                                                <strong>Web</strong>
+                                            </div>
+                                            <div class="col px-0">
+                                                <a href="#" class="text-decoration-none">www.stencoconstructions.com</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 justify-content-center">
+                    <div class="col-11 py-3 border-top border-white border-2">
+                        <p class="main-para text-center mb-0 py-2">Stenco Constructions © Copyright 2024. All Rights
+                            Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ------------------ ============= end - footer section ============= ------------------  -->
+
 
     <!-- seperate javascript cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

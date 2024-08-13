@@ -1,659 +1,701 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    color: #777;
-    /* font-family: "Open Sans", Arial, sans-serif; */
-    font-size: 16px;
-    line-height: 26px;
-}
-
-/* ------------------ */
-.main-heading {
-    font-size: 2.2em;
-    font-weight: 300;
-    line-height: 42px;
-}
-
-.text-color-dark {
-    color: #212529 !important;
-}
-
-.main-para {
-    font-size: 16px;
-    color: #777;
-    line-height: 26px;
-}
-
-.main-btn {
-    font-size: 18px;
-    font-weight: 500;
-    color: #04438d;
-    background-color: transparent;
-    border-color: #04438d;
-}
-
-.main-btn:hover {
-    background-color: #8cad32 !important;
-    border-color: #8cad32 !important;
-    color: #fff;
-}
-
-.img-head {
-    font-size: 1.7em;
-    font-weight: 400;
-    color: #777;
-    line-height: 35px;
-    text-transform: uppercase;
-}
-
-/* ------------------ */
-
-/* ----------- ========== start - header section ========== ----------- */
-.head-section {
-    background-color: #fff;
-    opacity: 1;
-}
-
-.navbar-brand {
-    width: 205px;
-}
-
-.head-section .nav-item {
-    margin-right: 1px;
-}
-
-.head-section .nav-links {
-    font-size: 15px;
-    color: #5e7279;
-    text-transform: uppercase;
-    padding: 30px 12px;
-}
-
-.head-section .nav-links:hover {
-    background-color: #04438d;
-    color: #fff;
-}
-
-.head-section .active {
-    color: #fff;
-    background-color: #04438d;
-}
-
-.head-section .fa-bars {
-    font-size: 30px;
-    color: #04438d;
-}
-
-.head-section .callus-para1 {
-    font-size: 16px;
-    color: #04438d;
-    font-weight: 400;
-}
-
-.head-section .callus-para2 a {
-    font-size: 24px;
-    color: #04438d;
-    font-weight: 800;
-}
-
-.fa-mobile-screen-button {
-    font-size: 2.5em !important;
-    color: #04438d !important;
-}
-
-
-/* -------------- navbar changes on scroll --------------  */
-.head-section {
-    position: fixed;
-    top: 25px;
-    background-color: rgba(255, 255, 255, 1);
-    transition: 0.5s;
-    z-index: 77;
-}
-
-.head-section.scrolled {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8) !important;
-    box-shadow: 0 0 3px rgba(234, 234, 234, .5);
-    transition: 0.5s;
-    /* z-index: 1000; */
-}
-
-.head-section.scrolled .nav-links {
-    color: #04438d;
-}
-
-.head-section.scrolled .nav-links:hover {
-    color: #fff;
-}
-
-.head-section.scrolled .active {
-    color: #fff;
-}
-
-/* ----------- ========== end - header section ========== ----------- */
-
-/* ----------- ========== start - hero section ========== ----------- */
-.hero-section .out-lawyer {
-    content: '';
-    top: 0;
-    bottom: 0;
-    width: 80%;
-}
-
-.hero-section .lawyer-text {
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.79);
-    font-size: 2.5em;
-    color: #04438d;
-    font-weight: 600;
-    opacity: 1;
-    z-index: 13;
-    transition: none 0s ease 0s;
-}
-
-.carousel-control-btn {
-    width: 40px;
-    height: 40px;
-    transform: rotate(45deg);
-    background-color: #000;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    transform: rotate(-45deg);
-    width: 20px;
-}
-
-/* ----------- ========== end - hero section ========== ----------- */
-
-/* ----------- ========== start - about section ========== ----------- */
-.about-section .about-img {
-    width: 100%;
-}
-
-.second-heading {
-    font-size: 1.4em;
-    font-weight: 600;
-    line-height: 27px;
-    letter-spacing: -0.6px;
-}
-
-.company-more-link {
-    font-size: 16px;
-    font-weight: 400;
-    color: #04438d;
-    text-decoration: none;
-}
-
-.company-more-link:hover {
-    color: #e35938;
-    text-decoration: underline;
-}
-
-/* ----------- ========== end - about section ========== ----------- */
-
-/* ----------- ========== start - contractor section ========== ----------- */
-.contractor-section {
-    background-color: #eaeff3 !important;
-}
-
-.contractor-section::before,
-.contractor-section::after {
-    background: #a1c24a none repeat scroll 0 0;
-    content: "";
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    bottom: -180px;
-    right: 85px;
-    transform: rotate(50deg);
-    z-index: 2;
-}
-
-.contractor-section::after {
-    background: #04438d !important;
-    bottom: -160px;
-    right: 10px;
-    z-index: 1;
-}
-
-.contractor-section .contractor-img img {
-    border: #e0e0e0 solid 1px;
-    background-color: #fff;
-}
-
-
-/* ----------- ========== end - contractor section ========== ----------- */
-
-/* ----------- ========== start - project section ========== ----------- */
-.text-color {
-    color: #04438d;
-}
-
-.project-section {
-    background: 0 0;
-    background: transparent url(images/home-concept-small.png) no-repeat center 63%;
-}
-
-.project-card {
-    position: relative;
-}
-
-.project-card::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    background: rgb(0, 0, 0);
-    opacity: 0;
-    transform: scale(0);
-    transition: all .2s ease;
-}
-
-.project-card:hover::after {
-    opacity: .3;
-    transform: scale(1);
-    cursor: pointer;
-}
-
-.project-card::before {
-    content: '\f00e';
-    font-weight: 900;
-    font-family: "Font Awesome 6 Free";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -10px 0px 0 -20px;
-    transform: scale(2);
-    z-index: 1;
-    font-size: 28px;
-    color: #fff;
-    transition: all .4s ease;
-    opacity: 0;
-}
-
-.project-card:hover::before {
-    opacity: 1;
-    transform: scale(1);
-}
-
-/* ----------- ========== end - project section ========== ----------- */
-
-
-/* ----------- ========== start - testimonial section ========== ----------- */
-.testimonial-section {
-    background-image: url(images/testimonials-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 100%;
-}
-
-.testimonial-card {
-    background-color: #fff;
-    padding: 16px 30px;
-}
-
-.testimonial-card::before {
-    content: '“';
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: #212529;
-    font-size: 70px;
-    font-weight: 800;
-    font-family: 'Playfair Display', serif;
-}
-
-.testimonial-card::after {
-    content: '”';
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    font-size: 70px;
-    font-weight: 800;
-    font-family: 'Playfair Display', serif;
-}
-
-.testimonial-card p {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    user-select: none;
-    padding: 0 40px;
-}
-
-.carousel-item h5 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #212529;
-}
-
-.carousel-indicators [data-bs-target] {
-    width: 8px;
-    height: 8px;
-    margin: 5px 4px;
-    border-radius: 50%;
-}
-
-/* ----------- ========== end - testimonial section ========== ----------- */
-
-/* ----------- ========== start - renovation section ========== ----------- */
-
-.renovation-para {
-    font-size: 1.2em;
-    font-weight: 300;
-}
-
-.renovation-img {
-    cursor: pointer;
-}
-
-.renovation-img img {
-    transition: all .3s ease;
-}
-
-.renovation-img:hover img {
-    transform: scale(1.1, 1.1);
-}
-
-/* ----------- ========== end - renovation section ========== ----------- */
-
-/* ----------- ========== start - estimate section ========== ----------- */
-.estimate-banar {
-    background-color: #04438d;
-}
-
-.estimate-head {
-    font-size: 1.8em;
-    font-weight: 700;
-    color: #fff;
-    line-height: 35px;
-    letter-spacing: 1px;
-}
-
-.estimate-link a {
-    font-size: 1.2em;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #333;
-    background-color: #fff;
-    border-color: #adadad;
-}
-
-.estimate-link a:hover {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #e6e6e6;
-}
-
-/* ----------- ========== end - estimate section ========== ----------- */
-
-/* ----------- ========== start - article section ========== ----------- */
-.article-section .card-title {
-    font-size: 22px;
-    height: 3em;
-    overflow: hidden;
-    line-height: 1.5em;
-}
-
-.article-section::after {
-    background: #04438d !important;
-    bottom: -140px;
-    content: "";
-    height: 200px;
-    right: 25px;
-    position: absolute;
-    transform: rotate(50deg);
-    width: 200px;
-    z-index: 1;
-}
-
-.article-section .card:hover {
-    cursor: pointer;
-}
-
-.card-text {
-    line-height: 1.6em;
-    height: 7em;       /* height is 2x line-height, so two lines will display */
-    overflow: hidden;
-}
-
-
-
-/* ----------- ========== end - article section ========== ----------- */
-
-/* ----------- ========== start - footer section ========== ----------- */
-.footer-section {
-    background: #e9eff2 url(images/footer-bg.jpg) no-repeat 50% 50%;
-}
-
-.footer-section::after {
-    background: #04438d none repeat scroll 0 0;
-    bottom: -270px;
-    content: "";
-    height: 400px;
-    width: 400px;
-    position: absolute;
-    left: -177px;
-    transform: rotate(50deg);
-    z-index: 1;
-}
-
-.footer-logo {
-    width: 200px;
-}
-
-.footer-section .fa-brands {
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    color: #fff;
-    background-color: #04438d;
-    border-radius: 50%;
-}
-
-.footer-section .fa-brands:hover {
-    cursor: pointer;
-}
-
-.footer-section .fa-facebook-f {
-    background-color: #6081c4;
-}
-
-.footer-section .fa-twitter {
-    background-color: #43bdef;
-}
-
-.footer-section .fa-linkedin {
-    background-color: #2797d0;
-}
-
-.footer-section .fa-youtube {
-    background-color: #c41e23;
-}
-
-.footer-section .fa-instagram {
-    background: linear-gradient(90deg, rgba(251, 194, 107, 1) 0%, rgba(224, 80, 106, 1) 50%, rgba(138, 84, 201, 1) 100%);
-}
-
-.footer-head {
-    font-size: 22px;
-    font-weight: 600
-}
-
-.footer-icon {
-    position: relative;
-}
-
-.footer-link li {
-    line-height: 35px;
-}
-
-.footer-link li a {
-    color: #777;
-    font-size: 1em;
-}
-
-.footer-link li a:hover {
-    color: #04438d;
-}
-
-.footer-link .fa-solid,
-.footer-link .fa-regular {
-    color: #04438d;
-}
-
-/* ----------- ========== end - footer section ========== ----------- */
-
-/* ----------- ========== start - project page ========== ----------- */
-.bannar-heading {
-    font-size: 2.6em;
-    font-weight: 300;
-    line-height: 44px;
-    color: #04438d;
-    letter-spacing: -.05em;
-    text-transform: uppercase;
-}
-/* ----------- ========== end - project page ========== ----------- */
-
-
-
-
-/* ------> media quries <-------  */
-@media screen and (max-width: 1200px) {
-    .header-nav-callus {
-        display: none !important;
-    }
-
-    .hero-section .lawyer-text {
-        font-size: 1.8em;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .head-section  {
-        top: 0px;
-    }
-    .head-section .nav-links {
-        padding: 8px 12px;
-        color: #04438d;
-        font-size: 14px;
-    }
-
-    .head-section .nav-item {
-        border-bottom: 1px solid #e8e8e8;
-    }
-
-    .head-section .active {
-        color: #fff;
-    }
-
-    .hero-section .lawyer-text {
-        font-size: 1.5em;
-    }
-
-    .article-section::after {
-        display: none;
-    }
-
-    .footer-logo {
-        width: 180px;
-    }
-
-    .footer-section::after {
-        display: none;
-    }
-}
-
-@media (max-width: 767px) {
-    .hero-section .lawyer-text {
-        font-size: 1.3em;
-    }
-
-    .contractor-section::before {
-        bottom: -220px;
-        right: 85px;
-    }
-
-    .contractor-section::after {
-        bottom: -205px;
-        right: 10px;
-    }
-
-    .footer-link .fa-solid,
-    .footer-link .fa-regular {
-        position: absolute;
-        left: 20px;
-    }
-
-    .fa-thumbtack {
-        top: 15px;
-    }
-
-    .fa-phone-flip {
-        top: 50px;
-    }
-
-    .fa-envelope {
-        top: 83px;
-    }
-
-    .fa-globe {
-        top: 117px;
-    }
-}
-
-@media (max-width: 575px) {
-    body {
-        font-size: 13px;
-    }
-
-    .hero-section .lawyer-text {
-        font-size: 1em;
-        border-radius: 10px;
-    }
-
-    .footer-link .fa-solid,
-    .footer-link .fa-regular {
-        left: 10px;
-    }
-
-    .main-para {
-        font-size: 14px;
-        font-weight: 400;
-    }
-
-    .testimonial-card p {
-        padding: 0 15px;
-        font-size: 18px;
-        font-weight: 400;
-    }
-
-    .testimonial-card::before,
-    .testimonial-card::after {
-        font-size: 55px;
-    }
-
-}
-
-@media (max-width: 425px) {
-    .hero-section .lawyer-text {
-        font-size: 0.7em;
-        border-radius: 7px;
-    }
-
-    .footer-link .fa-solid,
-    .footer-link .fa-regular {
-        left: 0px;
-    }
-}
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     color: #777;
+     /* font-family: "Open Sans", Arial, sans-serif; */
+     font-size: 16px;
+     line-height: 26px;
+ }
+
+ /* ------------------ */
+ .main-heading {
+     font-size: 2.2em;
+     font-weight: 300;
+     line-height: 42px;
+ }
+
+ .text-color-dark {
+     color: #212529 !important;
+ }
+
+ .main-para {
+     font-size: 16px;
+     color: #777;
+     line-height: 26px;
+ }
+
+ .main-btn {
+     font-size: 18px;
+     font-weight: 500;
+     color: #04438d;
+     background-color: transparent;
+     border-color: #04438d;
+ }
+
+ .main-btn:hover {
+     background-color: #8cad32 !important;
+     border-color: #8cad32 !important;
+     color: #fff;
+ }
+
+ .img-head {
+     font-size: 1.7em;
+     font-weight: 400;
+     color: #777;
+     line-height: 35px;
+     text-transform: uppercase;
+ }
+
+ .text-color-blue {
+     color: #04438d;
+ }
+
+ .bg-color-blue {
+     background-color: #04438d;
+ }
+
+ /* ------------------ */
+
+ /* ----------- ========== start - header section ========== ----------- */
+ .head-section {
+     background-color: #fff;
+     opacity: 1;
+ }
+
+ .navbar-brand {
+     width: 205px;
+ }
+
+ .head-section .nav-item {
+     margin-right: 1px;
+ }
+
+ .head-section .nav-links {
+     font-size: 15px;
+     color: #5e7279;
+     text-transform: uppercase;
+     padding: 30px 12px;
+ }
+
+ .head-section .nav-links:hover {
+     background-color: #04438d;
+     color: #fff;
+ }
+
+ .head-section .active {
+     color: #fff;
+     background-color: #04438d;
+ }
+
+ .head-section .fa-bars {
+     font-size: 30px;
+     color: #04438d;
+ }
+
+ .head-section .callus-para1 {
+     font-size: 16px;
+     color: #04438d;
+     font-weight: 400;
+ }
+
+ .head-section .callus-para2 a {
+     font-size: 24px;
+     color: #04438d;
+     font-weight: 800;
+ }
+
+ .fa-mobile-screen-button {
+     font-size: 2.5em !important;
+     color: #04438d !important;
+ }
+
+
+ /* -------------- navbar changes on scroll --------------  */
+ .head-section {
+     position: fixed;
+     top: 25px;
+     background-color: rgba(255, 255, 255, 1);
+     transition: 0.5s;
+     z-index: 77;
+ }
+
+ .head-section.scrolled {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     background-color: rgba(255, 255, 255, 0.8) !important;
+     box-shadow: 0 0 3px rgba(234, 234, 234, .5);
+     transition: 0.5s;
+ }
+
+ .head-section.scrolled .nav-links {
+     color: #04438d;
+ }
+
+ .head-section.scrolled .nav-links:hover {
+     color: #fff;
+ }
+
+ .head-section.scrolled .active {
+     color: #fff;
+ }
+
+ /* ----------- ========== end - header section ========== ----------- */
+
+ /* ----------- ========== start - hero section ========== ----------- */
+ .hero-section .out-lawyer {
+     content: '';
+     top: 0;
+     bottom: 0;
+     width: 80%;
+ }
+
+ .hero-section .lawyer-text {
+     border-radius: 15px;
+     background-color: rgba(255, 255, 255, 0.79);
+     font-size: 2.5em;
+     color: #04438d;
+     font-weight: 600;
+     opacity: 1;
+     z-index: 13;
+     transition: none 0s ease 0s;
+ }
+
+ .carousel-control-btn {
+     width: 40px;
+     height: 40px;
+     transform: rotate(45deg);
+     background-color: #000;
+ }
+
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon {
+     transform: rotate(-45deg);
+     width: 20px;
+ }
+
+ /* ----------- ========== end - hero section ========== ----------- */
+
+ /* ----------- ========== start - about section ========== ----------- */
+ .about-section .about-img {
+     width: 100%;
+ }
+
+ .second-heading {
+     font-size: 1.4em;
+     font-weight: 600;
+     line-height: 27px;
+     letter-spacing: -0.6px;
+ }
+
+ .company-more-link {
+     font-size: 16px;
+     font-weight: 400;
+     color: #04438d;
+ }
+
+ .company-more-link:hover {
+     color: #e35938;
+ }
+
+ /* ----------- ========== end - about section ========== ----------- */
+
+ /* ----------- ========== start - contractor section ========== ----------- */
+ .contractor-section {
+     background-color: #eaeff3 !important;
+ }
+
+ .custom-box-design::before,
+ .custom-box-design::after {
+     background: #a1c24a none repeat scroll 0 0;
+     content: "";
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     bottom: -180px;
+     right: 85px;
+     transform: rotate(50deg);
+     z-index: 2;
+ }
+
+ .custom-box-design::after {
+     background: #04438d !important;
+     bottom: -160px;
+     right: 10px;
+     z-index: 1;
+ }
+
+ .contractor-section .contractor-img img {
+     border: 1px solid #e0e0e0;
+     background-color: #fff;
+ }
+
+ /* ----------- ========== end - contractor section ========== ----------- */
+
+ /* ----------- ========== start - project section ========== ----------- */
+ .text-color {
+     color: #04438d;
+ }
+
+ .project-card::after {
+     content: '';
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     z-index: 1;
+     background: rgb(0, 0, 0);
+     opacity: 0;
+     transform: scale(0);
+     transition: all .2s ease;
+ }
+
+ .project-card:hover::after {
+     opacity: .3;
+     transform: scale(1);
+     cursor: pointer;
+ }
+
+ .project-card::before {
+     content: '\f00e';
+     font-weight: 900;
+     font-family: "Font Awesome 6 Free";
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     margin: -10px 0px 0 -20px;
+     transform: scale(2) rotate(45deg);
+     z-index: 1;
+     font-size: 28px;
+     color: #fff;
+     transition: all .4s ease;
+     opacity: 0;
+ }
+
+ .project-card:hover::before {
+     opacity: 1;
+     transform: scale(1) rotate(45deg);
+ }
+
+ .project-card {
+     width: 200px;
+     height: 200px;
+     transform: rotate(-45deg);
+     overflow: hidden;
+     transition: all .3s ease-in-out;
+     display: inline-block;
+     background-color: rgba(0, 0, 0, 0.3);
+ }
+
+ .project-content {
+     width: 200px;
+     height: 200px;
+     display: table-cell;
+     background-color: pink;
+     transform: rotate(45deg);
+     vertical-align: middle;
+     text-align: center;
+ }
+
+ .project-content img {
+     max-width: 320px;
+     margin-left: -40%;
+
+ }
+
+ /* ----------- ========== end - project section ========== ----------- */
+
+
+ /* ----------- ========== start - testimonial section ========== ----------- */
+ .testimonial-section {
+     background-image: url(images/testimonials-bg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: 50% 100%;
+ }
+
+ .testimonial-card {
+     padding: 16px 30px;
+ }
+
+ .testimonial-card::before {
+     content: '“';
+     position: absolute;
+     top: 20px;
+     left: 20px;
+     color: #212529;
+     font-size: 70px;
+     font-weight: 800;
+     font-family: 'Playfair Display', serif;
+ }
+
+ .testimonial-card::after {
+     content: '”';
+     position: absolute;
+     right: 20px;
+     bottom: 20px;
+     color: #212529;
+     font-size: 70px;
+     font-weight: 800;
+     font-family: 'Playfair Display', serif;
+ }
+
+ .testimonial-card p {
+     font-size: 20px;
+     font-weight: 500;
+     user-select: none;
+
+     line-height: 32px;
+     height: 8em;
+     overflow: hidden;
+     /* padding: 0 15px; */
+ }
+
+ .carousel-item h5 {
+     font-size: 18px;
+     font-weight: 600;
+     color: #212529;
+ }
+
+ .carousel-indicators [data-bs-target] {
+     width: 8px;
+     height: 8px;
+     margin: 5px 4px;
+     border-radius: 50%;
+ }
+
+ /* ----------- ========== end - testimonial section ========== ----------- */
+
+ /* ----------- ========== start - renovation section ========== ----------- */
+
+ .renovation-para {
+     font-size: 1.2em;
+     font-weight: 300;
+ }
+
+ .renovation-img {
+     cursor: pointer;
+ }
+
+ .renovation-img img {
+     transition: all .3s ease;
+ }
+
+ .renovation-img:hover img {
+     transform: scale(1.1, 1.1);
+ }
+
+ /* ----------- ========== end - renovation section ========== ----------- */
+
+ /* ----------- ========== start - estimate section ========== ----------- */
+ .estimate-banar {
+     background-color: #04438d;
+ }
+
+ .estimate-head {
+     font-size: 1.8em;
+     font-weight: 700;
+     color: #fff;
+     line-height: 35px;
+     letter-spacing: 1px;
+ }
+
+ .estimate-link a {
+     font-size: 1.2em;
+     text-transform: uppercase;
+     font-weight: 700;
+     color: #333;
+     background-color: #fff;
+     border-color: #adadad;
+ }
+
+ .estimate-link a:hover {
+     color: #333;
+     background-color: #e6e6e6;
+     border-color: #e6e6e6;
+ }
+
+ /* ----------- ========== end - estimate section ========== ----------- */
+
+ /* ----------- ========== start - article section ========== ----------- */
+ .article-section .card-title {
+     font-size: 22px;
+     height: 3em;
+     overflow: hidden;
+     line-height: 1.5em;
+ }
+
+ .article-section .card:hover {
+     cursor: pointer;
+ }
+
+ .card-text {
+     line-height: 1.6em;
+     height: 7em;
+     /* height is 2x line-height, so two lines will display */
+     overflow: hidden;
+ }
+
+ /* ----------- ========== end - article section ========== ----------- */
+
+ /* ----------- ========== start - footer section ========== ----------- */
+ .footer-section {
+     background: #e9eff2 url(images/footer-bg.jpg) no-repeat 50% 50%;
+ }
+
+ .footer-section::after {
+     background: #04438d none repeat scroll 0 0;
+     bottom: -270px;
+     content: "";
+     height: 400px;
+     width: 400px;
+     position: absolute;
+     left: -177px;
+     transform: rotate(50deg);
+     z-index: 1;
+ }
+
+ .footer-logo {
+     width: 200px;
+ }
+
+ .footer-section .fa-brands {
+     width: 40px;
+     height: 40px;
+     font-size: 22px;
+     color: #fff;
+     background-color: #04438d;
+     border-radius: 50%;
+ }
+
+ .footer-section .fa-brands:hover {
+     cursor: pointer;
+ }
+
+ .footer-section .fa-facebook-f {
+     background-color: #6081c4;
+ }
+
+ .footer-section .fa-twitter {
+     background-color: #43bdef;
+ }
+
+ .footer-section .fa-linkedin {
+     background-color: #2797d0;
+ }
+
+ .footer-section .fa-youtube {
+     background-color: #c41e23;
+ }
+
+ .footer-section .fa-instagram {
+     background: linear-gradient(90deg, rgba(251, 194, 107, 1) 0%, rgba(224, 80, 106, 1) 50%, rgba(138, 84, 201, 1) 100%);
+ }
+
+ .footer-head {
+     font-size: 22px;
+     font-weight: 600
+ }
+
+ .footer-icon {
+     position: relative;
+ }
+ /* .footer-icon li, */
+ .footer-link li {
+     line-height: 35px;
+ }
+
+ .footer-icon li a,
+ .footer-link li a {
+     color: #777;
+     font-size: 1em;
+ }
+
+ .footer-icon li a:hover,
+ .footer-link li a:hover {
+     color: #04438d;
+ }
+
+ .footer-icon .fa-solid,
+ .footer-icon .fa-regular {
+     color: #04438d;
+ }
+
+ /* ----------- ========== end - footer section ========== ----------- */
+
+ /* ----------- ========== start - project page ========== ----------- */
+ .bannar-heading {
+     font-size: 2.6em;
+     font-weight: 300;
+     line-height: 44px;
+     color: #04438d;
+     letter-spacing: -.05em;
+     text-transform: uppercase;
+ }
+
+ /* ----------- ========== end - project page ========== ----------- */
+
+
+
+
+ /* ------> media quries <-------  */
+ @media screen and (max-width: 1200px) {
+     .header-nav-callus {
+         display: none !important;
+     }
+
+     .hero-section .lawyer-text {
+         font-size: 1.8em;
+     }
+ }
+
+ @media screen and (max-width: 991px) {
+     .head-section {
+         top: 0px;
+     }
+
+     .head-section .nav-links {
+         padding: 8px 12px;
+         color: #04438d;
+         font-size: 14px;
+     }
+
+     .head-section .nav-item {
+         border-bottom: 1px solid #e8e8e8;
+     }
+
+     .head-section .active {
+         color: #fff;
+     }
+
+     .hero-section .lawyer-text {
+         font-size: 1.5em;
+     }
+
+     .footer-logo {
+         width: 180px;
+     }
+
+     .footer-section::after {
+         display: none;
+     }
+ }
+
+ @media (max-width: 767px) {
+     .hero-section .lawyer-text {
+         font-size: 1.3em;
+     }
+
+     .custom-box-design::before {
+         bottom: -220px;
+         right: 85px;
+     }
+
+     .custom-box-design::after {
+         bottom: -205px;
+         right: 10px;
+     }
+
+     .footer-link .fa-solid,
+     .footer-link .fa-regular {
+         position: absolute;
+         left: 20px;
+     }
+
+     .fa-thumbtack {
+         top: 15px;
+     }
+
+     .fa-phone-flip {
+         top: 50px;
+     }
+
+     .fa-envelope {
+         top: 83px;
+     }
+
+     .fa-globe {
+         top: 117px;
+     }
+ }
+
+ @media (max-width: 575px) {
+     body {
+         font-size: 13px;
+     }
+
+     .hero-section .lawyer-text {
+         font-size: 1em;
+         border-radius: 10px;
+     }
+
+     .footer-link .fa-solid,
+     .footer-link .fa-regular {
+         left: 10px;
+     }
+
+     .main-para {
+         font-size: 14px;
+         font-weight: 400;
+     }
+
+     .testimonial-card p {
+         /* padding: 0 15px; */
+         height: 9em;
+         font-size: 18px;
+         font-weight: 400;
+     }
+
+     .testimonial-card::before,
+     .testimonial-card::after {
+         font-size: 55px;
+     }
+
+ }
+
+ @media (max-width: 425px) {
+     .hero-section .lawyer-text {
+         font-size: 0.7em;
+         border-radius: 7px;
+     }
+
+     .footer-link .fa-solid,
+     .footer-link .fa-regular {
+         left: 0px;
+     }
+ }
+
+ /* -------------- for project section ----------------- */
+ @media (max-width: 1399px) {
+     .project-card {
+         width: 195px;
+         height: 195px;
+     }
+ }
+
+ @media (max-width: 1199px) {
+     .project-card {
+         width: 230px;
+         height: 230px;
+     }
+ }
+
+ @media (max-width: 992px) {
+     .project-card {
+         width: 200px;
+         height: 200px;
+     }
+ }
+
+ @media (max-width: 767px) {
+     .project-card {
+         width: 220px;
+         height: 220px;
+         margin-top: 60px;
+     }
+ }
