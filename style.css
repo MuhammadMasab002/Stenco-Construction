@@ -593,6 +593,17 @@
          border-radius: 10px;
      }
 
+     .carousel-control-btn {
+         width: 30px;
+         height: 30px;
+     }
+
+     .carousel-control-prev-icon,
+     .carousel-control-next-icon {
+         transform: rotate(-45deg);
+         width: 15px;
+     }
+
      .main-para {
          font-size: 14px;
          font-weight: 400;
@@ -607,6 +618,7 @@
      .testimonial-card::after {
          font-size: 55px;
      }
+
 
  }
 
