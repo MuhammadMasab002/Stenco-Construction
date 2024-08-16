@@ -19,3 +19,18 @@ for (var i = 0; i < btns.length; i++) {
         this.className += " active";
     });
 }
+
+// let projectContent = document.querySelector('.project-card');
+// projectContent.addEventListener('click', function () {
+//     console.log(projectContent.innerHTML.img);
+// })
+
+document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('click', function () {
+        const imgTag = this.querySelector('img');
+ 
+        let one = document.getElementById('project-img');
+        let x = one.setAttribute("src", imgTag.src);
+        console.log(x);
+    });
+});

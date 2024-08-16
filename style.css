@@ -31,7 +31,6 @@
  .main-btn {
      font-size: 18px;
      font-weight: 500;
-     color: #04438d;
      background-color: transparent;
      border-color: #04438d;
  }
@@ -95,24 +94,20 @@
 
  .head-section .fa-bars {
      font-size: 30px;
-     color: #04438d;
  }
 
  .head-section .callus-para1 {
      font-size: 16px;
-     color: #04438d;
      font-weight: 400;
  }
 
  .head-section .callus-para2 a {
      font-size: 24px;
-     color: #04438d;
      font-weight: 800;
  }
 
  .fa-mobile-screen-button {
      font-size: 2.5em !important;
-     color: #04438d !important;
  }
 
 
@@ -152,7 +147,6 @@
      border-radius: 15px;
      background-color: rgba(255, 255, 255, 0.79);
      font-size: 2.5em;
-     color: #04438d;
      font-weight: 600;
      opacity: 1;
      z-index: 13;
@@ -185,7 +179,6 @@
  .company-more-link {
      font-size: 16px;
      font-weight: 400;
-     color: #04438d;
  }
 
  .company-more-link:hover {
@@ -227,8 +220,10 @@
  /* ----------- ========== end - contractor section ========== ----------- */
 
  /* ----------- ========== start - project section ========== ----------- */
- .text-color {
-     color: #04438d;
+ .project-section {
+     background: url(images/home-concept-small.png) no-repeat center;
+     background-size: contain;
+
  }
 
  .project-card::after {
@@ -308,26 +303,25 @@
      padding: 16px 30px;
  }
 
- .testimonial-card::before {
-     content: '“';
+ .testimonial-card::before,
+ .testimonial-card::after {
      position: absolute;
-     top: 20px;
-     left: 20px;
      color: #212529;
      font-size: 70px;
      font-weight: 800;
      font-family: 'Playfair Display', serif;
  }
 
+ .testimonial-card::before {
+     content: '“';
+     top: 20px;
+     left: 20px;
+ }
+
  .testimonial-card::after {
      content: '”';
-     position: absolute;
      right: 20px;
      bottom: 20px;
-     color: #212529;
-     font-size: 70px;
-     font-weight: 800;
-     font-family: 'Playfair Display', serif;
  }
 
  .testimonial-card p {
@@ -341,7 +335,6 @@
  .carousel-item h5 {
      font-size: 18px;
      font-weight: 600;
-     color: #212529;
  }
 
  .carousel-indicators [data-bs-target] {
@@ -375,10 +368,6 @@
  /* ----------- ========== end - renovation section ========== ----------- */
 
  /* ----------- ========== start - estimate section ========== ----------- */
- .estimate-banar {
-     background-color: #04438d;
- }
-
  .estimate-head {
      font-size: 1.8em;
      font-weight: 700;
@@ -448,7 +437,6 @@
      height: 40px;
      font-size: 22px;
      color: #fff;
-     background-color: #04438d;
      border-radius: 50%;
  }
 
@@ -498,11 +486,6 @@
      color: #04438d;
  }
 
- .footer-link .fa-solid,
- .footer-link .fa-regular {
-     color: #04438d;
- }
-
  /* ----------- ========== end - footer section ========== ----------- */
 
  /* ----------- ========== start - project page ========== ----------- */
@@ -515,7 +498,6 @@
      font-size: 2.6em;
      font-weight: 300;
      line-height: 44px;
-     color: #04438d;
      letter-spacing: -.05em;
  }
 
@@ -525,6 +507,13 @@
 
 
  /* ------> media quries <-------  */
+ @media screen and (max-width: 1399px) {
+     .project-card {
+         width: 195px;
+         height: 195px;
+     }
+ }
+
  @media screen and (max-width: 1200px) {
      .header-nav-callus {
          display: none !important;
@@ -532,6 +521,11 @@
 
      .hero-section .lawyer-text {
          font-size: 1.8em;
+     }
+
+     .project-card {
+         width: 230px;
+         height: 230px;
      }
  }
 
@@ -558,8 +552,9 @@
          font-size: 1.5em;
      }
 
-     .footer-logo {
-         width: 180px;
+     .project-card {
+         width: 200px;
+         height: 200px;
      }
 
      .footer-section::after {
@@ -567,7 +562,7 @@
      }
  }
 
- @media (max-width: 767px) {
+ @media screen and (max-width: 767px) {
      .hero-section .lawyer-text {
          font-size: 1.3em;
      }
@@ -581,15 +576,25 @@
          bottom: -205px;
          right: 10px;
      }
+
+     .project-section {
+         background: transparent;
+     }
+
+     .project-card {
+         width: 220px;
+         height: 220px;
+         margin-top: 60px;
+     }
  }
 
- @media (max-width: 575px) {
+ @media screen and (max-width: 575px) {
      body {
          font-size: 13px;
      }
 
      .hero-section .lawyer-text {
-         font-size: 1em;
+         font-size: 1.2em;
          border-radius: 10px;
      }
 
@@ -618,43 +623,11 @@
      .testimonial-card::after {
          font-size: 55px;
      }
-
-
  }
 
- @media (max-width: 425px) {
+ @media screen and (max-width: 425px) {
      .hero-section .lawyer-text {
-         font-size: 0.7em;
+         font-size: 0.9em;
          border-radius: 7px;
-     }
- }
-
- /* -------------- for project section ----------------- */
- @media (max-width: 1399px) {
-     .project-card {
-         width: 195px;
-         height: 195px;
-     }
- }
-
- @media (max-width: 1199px) {
-     .project-card {
-         width: 230px;
-         height: 230px;
-     }
- }
-
- @media (max-width: 992px) {
-     .project-card {
-         width: 200px;
-         height: 200px;
-     }
- }
-
- @media (max-width: 767px) {
-     .project-card {
-         width: 220px;
-         height: 220px;
-         margin-top: 60px;
      }
  }
