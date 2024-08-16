@@ -47,7 +47,6 @@
      font-weight: 400;
      color: #777;
      line-height: 35px;
-     text-transform: uppercase;
  }
 
  .text-color-blue {
@@ -62,8 +61,11 @@
 
  /* ----------- ========== start - header section ========== ----------- */
  .head-section {
-     background-color: #fff;
-     opacity: 1;
+     position: fixed;
+     top: 25px;
+     background-color: rgba(255, 255, 255, 1);
+     transition: 0.5s;
+     z-index: 77;
  }
 
  .navbar-brand {
@@ -115,14 +117,6 @@
 
 
  /* -------------- navbar changes on scroll --------------  */
- .head-section {
-     position: fixed;
-     top: 25px;
-     background-color: rgba(255, 255, 255, 1);
-     transition: 0.5s;
-     z-index: 77;
- }
-
  .head-section.scrolled {
      position: fixed;
      top: 0;
@@ -181,10 +175,6 @@
  /* ----------- ========== end - hero section ========== ----------- */
 
  /* ----------- ========== start - about section ========== ----------- */
- .about-section .about-img {
-     width: 100%;
- }
-
  .second-heading {
      font-size: 1.4em;
      font-weight: 600;
@@ -286,20 +276,15 @@
      width: 200px;
      height: 200px;
      transform: rotate(-45deg);
-     overflow: hidden;
      transition: all .3s ease-in-out;
-     display: inline-block;
      background-color: rgba(0, 0, 0, 0.3);
  }
 
  .project-content {
      width: 200px;
      height: 200px;
-     display: table-cell;
      background-color: pink;
      transform: rotate(45deg);
-     vertical-align: middle;
-     text-align: center;
  }
 
  .project-content img {
@@ -349,11 +334,8 @@
      font-size: 20px;
      font-weight: 500;
      user-select: none;
-
+     text-align: justify;
      line-height: 32px;
-     height: 8em;
-     overflow: hidden;
-     /* padding: 0 15px; */
  }
 
  .carousel-item h5 {
@@ -426,7 +408,6 @@
  .article-section .card-title {
      font-size: 22px;
      height: 3em;
-     overflow: hidden;
      line-height: 1.5em;
  }
 
@@ -437,8 +418,6 @@
  .card-text {
      line-height: 1.6em;
      height: 7em;
-     /* height is 2x line-height, so two lines will display */
-     overflow: hidden;
  }
 
  /* ----------- ========== end - article section ========== ----------- */
@@ -505,7 +484,7 @@
  .footer-icon {
      position: relative;
  }
- 
+
  .footer-link li {
      line-height: 35px;
  }
@@ -527,13 +506,17 @@
  /* ----------- ========== end - footer section ========== ----------- */
 
  /* ----------- ========== start - project page ========== ----------- */
+ .project-bannar-section {
+     background-color: #eaeff3 !important;
+     border-color: #dae3ea !important;
+ }
+
  .bannar-heading {
      font-size: 2.6em;
      font-weight: 300;
      line-height: 44px;
      color: #04438d;
      letter-spacing: -.05em;
-     text-transform: uppercase;
  }
 
  /* ----------- ========== end - project page ========== ----------- */
@@ -610,14 +593,23 @@
          border-radius: 10px;
      }
 
+     .carousel-control-btn {
+         width: 30px;
+         height: 30px;
+     }
+
+     .carousel-control-prev-icon,
+     .carousel-control-next-icon {
+         transform: rotate(-45deg);
+         width: 15px;
+     }
+
      .main-para {
          font-size: 14px;
          font-weight: 400;
      }
 
      .testimonial-card p {
-         /* padding: 0 15px; */
-         height: 9em;
          font-size: 18px;
          font-weight: 400;
      }
@@ -626,6 +618,7 @@
      .testimonial-card::after {
          font-size: 55px;
      }
+
 
  }
 
