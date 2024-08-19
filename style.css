@@ -7,7 +7,7 @@
  body {
      color: #777;
      /* font-family: "Open Sans", Arial, sans-serif; */
-     font-size: 16px;
+     font-size: 13px !important;
      line-height: 26px;
  }
 
@@ -23,7 +23,8 @@
  }
 
  .main-para {
-     font-size: 16px;
+     font-size: 14px;
+     font-weight: 400;
      color: #777;
      line-height: 26px;
  }
@@ -61,7 +62,7 @@
  /* ----------- ========== start - header section ========== ----------- */
  .head-section {
      position: fixed;
-     top: 25px;
+     top: 0px;
      background-color: rgba(255, 255, 255, 1);
      transition: 0.5s;
      z-index: 77;
@@ -72,14 +73,14 @@
  }
 
  .head-section .nav-item {
-     margin-right: 1px;
+     border-bottom: 1px solid #e8e8e8;
  }
 
  .head-section .nav-links {
-     font-size: 15px;
+     padding: 8px 12px;
      color: #5e7279;
+     font-size: 13px;
      text-transform: uppercase;
-     padding: 30px 12px;
  }
 
  .head-section .nav-links:hover {
@@ -109,7 +110,6 @@
  .fa-mobile-screen-button {
      font-size: 2.5em !important;
  }
-
 
  /* -------------- navbar changes on scroll --------------  */
  .head-section.scrolled {
@@ -144,18 +144,18 @@
  }
 
  .hero-section .lawyer-text {
-     border-radius: 15px;
      background-color: rgba(255, 255, 255, 0.79);
-     font-size: 2.5em;
      font-weight: 600;
      opacity: 1;
      z-index: 13;
      transition: none 0s ease 0s;
+     font-size: 0.9em;
+     border-radius: 7px;
  }
 
  .carousel-control-btn {
-     width: 40px;
-     height: 40px;
+     width: 30px;
+     height: 30px;
      transform: rotate(45deg);
      background-color: #000;
  }
@@ -163,7 +163,7 @@
  .carousel-control-prev-icon,
  .carousel-control-next-icon {
      transform: rotate(-45deg);
-     width: 20px;
+     width: 15px;
  }
 
  /* ----------- ========== end - hero section ========== ----------- */
@@ -199,7 +199,7 @@
      width: 200px;
      height: 200px;
      position: absolute;
-     bottom: -180px;
+     bottom: -220px;
      right: 85px;
      transform: rotate(50deg);
      z-index: 2;
@@ -207,9 +207,10 @@
 
  .custom-box-design::after {
      background: #04438d !important;
-     bottom: -160px;
      right: 10px;
+     bottom: -205px;
      z-index: 1;
+
  }
 
  .contractor-section .contractor-img img {
@@ -221,9 +222,7 @@
 
  /* ----------- ========== start - project section ========== ----------- */
  .project-section .container {
-     background: url(images/home-concept-small.png) no-repeat center;
-     background-size: contain;
-
+     background: transparent;
  }
 
  .project-card::after {
@@ -268,8 +267,10 @@
  }
 
  .project-card {
-     width: 200px;
-     height: 200px;
+
+     width: 220px;
+     height: 220px;
+     margin-top: 60px;
      transform: rotate(-45deg);
      transition: all .3s ease-in-out;
      background-color: rgba(0, 0, 0, 0.3);
@@ -289,16 +290,15 @@
  }
 
  .btn-close {
-    background: transparent;
+     background: transparent;
  }
 
  .fa-xmark {
-    color: #fff;
-    font-size: 26px;
+     color: #fff;
+     font-size: 26px;
  }
 
  /* ----------- ========== end - project section ========== ----------- */
-
 
  /* ----------- ========== start - testimonial section ========== ----------- */
  .testimonial-section {
@@ -316,7 +316,7 @@
  .testimonial-card::after {
      position: absolute;
      color: #212529;
-     font-size: 70px;
+     font-size: 55px;
      font-weight: 800;
      font-family: 'Playfair Display', serif;
  }
@@ -334,8 +334,8 @@
  }
 
  .testimonial-card p {
-     font-size: 20px;
-     font-weight: 500;
+     font-size: 18px;
+     font-weight: 400;
      user-select: none;
      text-align: justify;
      line-height: 32px;
@@ -435,6 +435,7 @@
      left: -177px;
      transform: rotate(50deg);
      z-index: 1;
+     display: none;
  }
 
  .footer-logo {
@@ -512,20 +513,95 @@
 
  /* ----------- ========== end - project page ========== ----------- */
 
-
-
-
  /* ------> media quries <-------  */
- @media screen and (max-width: 1399px) {
-     .project-card {
-         width: 195px;
-         height: 195px;
+ @media screen and (min-width: 425px) {
+     .hero-section .lawyer-text {
+         font-size: 1.2em;
+         border-radius: 10px;
+     }
+
+     .carousel-control-btn {
+         width: 40px;
+         height: 40px;
+     }
+
+     .carousel-control-prev-icon,
+     .carousel-control-next-icon {
+         width: 20px;
+     }
+
+     .main-para {
+         font-size: 16px;
+     }
+
+     .testimonial-card p {
+         font-size: 20px;
+         font-weight: 500;
+     }
+
+     .testimonial-card::before,
+     .testimonial-card::after {
+         font-size: 70px;
      }
  }
 
- @media screen and (max-width: 1200px) {
-     .header-nav-callus {
-         display: none !important;
+ @media screen and (min-width: 575px) {
+     body {
+         font-size: 16px;
+     }
+
+     .head-section .nav-links {
+         font-size: 14px;
+     }
+
+
+     .hero-section .lawyer-text {
+         font-size: 1.3em;
+     }
+ }
+
+ @media screen and (min-width: 767px) {
+     .head-section .active {
+         color: #fff;
+     }
+
+     .hero-section .lawyer-text {
+         font-size: 1.5em;
+     }
+
+     .custom-box-design::before {
+         bottom: -180px;
+     }
+
+     .custom-box-design::after {
+         bottom: -160px;
+     }
+
+     .project-section .container {
+         background: url(images/home-concept-small.png) no-repeat center;
+         background-size: contain;
+     }
+
+     .project-card {
+         width: 200px;
+         height: 200px;
+         margin-top: 0;
+     }
+ }
+
+ @media screen and (min-width: 991px) {
+     .head-section {
+         top: 25px;
+     }
+
+     .head-section .nav-links {
+         padding: 30px 12px;
+         font-size: 15px;
+     }
+
+     .head-section .nav-item {
+         border-bottom: none;
+         margin-right: 1px;
      }
 
      .hero-section .lawyer-text {
@@ -536,107 +612,20 @@
          width: 230px;
          height: 230px;
      }
- }
-
- @media screen and (max-width: 991px) {
-     .head-section {
-         top: 0px;
-     }
-
-     .head-section .nav-links {
-         padding: 8px 12px;
-         color: #04438d;
-         font-size: 14px;
-     }
-
-     .head-section .nav-item {
-         border-bottom: 1px solid #e8e8e8;
-     }
-
-     .head-section .active {
-         color: #fff;
-     }
-
-     .hero-section .lawyer-text {
-         font-size: 1.5em;
-     }
-
-     .project-card {
-         width: 200px;
-         height: 200px;
-     }
 
      .footer-section::after {
-         display: none;
+         display: block;
      }
  }
 
- @media screen and (max-width: 767px) {
+ @media screen and (min-width: 1200px) {
      .hero-section .lawyer-text {
-         font-size: 1.3em;
-     }
-
-     .custom-box-design::before {
-         bottom: -220px;
-         right: 85px;
-     }
-
-     .custom-box-design::after {
-         bottom: -205px;
-         right: 10px;
-     }
-
-     .project-section .container {
-         background: transparent;
+         border-radius: 15px;
+         font-size: 2.5em;
      }
 
      .project-card {
-         width: 220px;
-         height: 220px;
-         margin-top: 60px;
-     }
- }
-
- @media screen and (max-width: 575px) {
-     body {
-         font-size: 13px;
-     }
-
-     .hero-section .lawyer-text {
-         font-size: 1.2em;
-         border-radius: 10px;
-     }
-
-     .carousel-control-btn {
-         width: 30px;
-         height: 30px;
-     }
-
-     .carousel-control-prev-icon,
-     .carousel-control-next-icon {
-         transform: rotate(-45deg);
-         width: 15px;
-     }
-
-     .main-para {
-         font-size: 14px;
-         font-weight: 400;
-     }
-
-     .testimonial-card p {
-         font-size: 18px;
-         font-weight: 400;
-     }
-
-     .testimonial-card::before,
-     .testimonial-card::after {
-         font-size: 55px;
-     }
- }
-
- @media screen and (max-width: 425px) {
-     .hero-section .lawyer-text {
-         font-size: 0.9em;
-         border-radius: 7px;
+         width: 195px;
+         height: 195px;
      }
  }
