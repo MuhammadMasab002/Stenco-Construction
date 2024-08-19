@@ -220,7 +220,7 @@
  /* ----------- ========== end - contractor section ========== ----------- */
 
  /* ----------- ========== start - project section ========== ----------- */
- .project-section {
+ .project-section .container {
      background: url(images/home-concept-small.png) no-repeat center;
      background-size: contain;
 
@@ -286,6 +286,15 @@
      max-width: 320px;
      margin-left: -40%;
 
+ }
+
+ .btn-close {
+    background: transparent;
+ }
+
+ .fa-xmark {
+    color: #fff;
+    font-size: 26px;
  }
 
  /* ----------- ========== end - project section ========== ----------- */
@@ -577,7 +586,7 @@
          right: 10px;
      }
 
-     .project-section {
+     .project-section .container {
          background: transparent;
      }
 
