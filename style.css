@@ -318,6 +318,7 @@
  .testimonial-card p {
      font-size: 18px;
      font-weight: 400;
+     -webkit-user-select: none;
      user-select: none;
      text-align: justify;
      line-height: 32px;
