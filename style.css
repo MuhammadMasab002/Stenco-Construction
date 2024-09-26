@@ -195,9 +195,9 @@
 
  }
 
- .contractor-section .contractor-img img {
+ .contractor-img img {
      border: 1px solid #e0e0e0;
-     background-color: #fff;
+     background-color: white;
  }
 
  /* ----------- ========== end - contractor section ========== ----------- */
@@ -491,6 +491,26 @@
  }
 
  /* ----------- ========== end - project page ========== ----------- */
+ 
+ /* ----------- ========== start - company page ========== ----------- */
+ .services-section .fa-bullseye,
+ .services-section .fa-eye {
+    font-size: 30px;
+    color: red;
+ }
+ /* ----------- ========== end - company page ========== ----------- */
+ 
+ /* ----------- ========== start - interior-renovation-services page ========== ----------- */
+ .interior-text {
+    text-decoration: none;
+ }
+ .interior-text:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+ }
+ /* ----------- ========== end - interior-renovation-services page ========== ----------- */
+
+
 
  /* ------> media queries <-------  */
  @media screen and (min-width: 425px) {
