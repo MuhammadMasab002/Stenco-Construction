@@ -288,6 +288,7 @@
      background-repeat: no-repeat;
      background-size: cover;
      background-position: 50% 100%;
+     min-height: 540px;
  }
 
  .testimonial-card {
@@ -509,6 +510,12 @@
     text-decoration-color: red;
  }
  /* ----------- ========== end - interior-renovation-services page ========== ----------- */
+ 
+ /* ----------- ========== start - kitchen-services-section page ========== ----------- */
+ .kitchen-services-section {
+    background-color: #f7f7f7;
+ }
+ /* ----------- ========== end - kitchen-services-section page ========== ----------- */
 
 
 
