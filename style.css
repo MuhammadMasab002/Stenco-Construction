@@ -492,29 +492,33 @@
  }
 
  /* ----------- ========== end - project page ========== ----------- */
- 
+
  /* ----------- ========== start - company page ========== ----------- */
  .services-section .fa-bullseye,
  .services-section .fa-eye {
-    font-size: 30px;
-    color: red;
+     font-size: 30px;
+     color: red;
  }
+
  /* ----------- ========== end - company page ========== ----------- */
- 
+
  /* ----------- ========== start - interior-renovation-services page ========== ----------- */
  .interior-text {
-    text-decoration: none;
+     text-decoration: none;
  }
+
  .interior-text:hover {
-    text-decoration: underline;
-    text-decoration-color: red;
+     text-decoration: underline;
+     text-decoration-color: red;
  }
+
  /* ----------- ========== end - interior-renovation-services page ========== ----------- */
- 
+
  /* ----------- ========== start - kitchen-services-section page ========== ----------- */
  .kitchen-services-section {
-    background-color: #f7f7f7;
+     background-color: #f7f7f7;
  }
+
  /* ----------- ========== end - kitchen-services-section page ========== ----------- */
 
 
@@ -599,6 +603,31 @@
  }
 
  @media screen and (min-width: 991px) {
+
+     /* Show dropdown on hover */
+     .navbar-nav .dropdown:hover .dropdown-menu {
+         display: block;
+         opacity: 1;
+         visibility: visible;
+         transition: opacity 0.3s ease;
+     }
+
+     /* Add this to make dropdown menus transition smoothly */
+     .navbar-nav .dropdown .dropdown-menu {
+         opacity: 0;
+         visibility: hidden;
+         transition: opacity 0.3s ease;
+     }
+
+     .navbar-nav .dropdown:hover .dropdown-toggle::after {
+         transform: rotate(180deg);
+     }
+
+     .dropdown-menu {
+         margin-top: 0;
+         /* Remove margin if any */
+     }
+
      .head-section {
          top: 25px;
      }
